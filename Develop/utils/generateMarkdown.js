@@ -3,27 +3,19 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
-      break;
+      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
 
     case "GPLv3":
-      `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`;
-      break;
+      return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`;
 
     case "Apache 2.0":
-      `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
-      break;
+      return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
 
     case "BSD 3-Clause":
-      `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`;
-      break;
-
-    case "None":
-      "";
-      break;
+      return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`;
 
     default:
-      console.log("Ensure license badge link is correct");
+      return "";
   }
 }
 
@@ -104,14 +96,25 @@ function generateMarkdown(data) {
    ## Description
    
    ${description}
+
+   ## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
     
    ## Installation
-
+   
+   To install the necessary dependencies, run the following command:
    ${installation}
 
    ## Usage
 
-   ${usage}
+   To use this application, run the following command:
+   node${usage}
 
    ## How to Contribute
 
@@ -125,12 +128,18 @@ function generateMarkdown(data) {
 
    ${renderLicenseSection(license)}
 
+   ## Tests
+
+   To run tests, use the following command:
+   ${tests}
 
    ## Questions
 
-   <a href="https://github.com/${github}">GitHub</a>
+   If you have any questions about the project, please feel free to contact me directly:
 
-   If you have further questions, 
+   GitHub: <a href="https://github.com/${github}">${github}</a>
+
+   Email: <a href="mailto:${email}">${email}</a>
 `;
 }
 
