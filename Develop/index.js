@@ -16,9 +16,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  const fileName = "READNE.md";
+  fileName = "README.md";
 
-  const data = `# ${title}
+  data = `# ${title}
     
    ## Description
    
@@ -46,6 +46,10 @@ function writeToFile(fileName, data) {
 
    If you have further question, <a href="mailto:${email}">shoot me an email</a>
     `;
+
+  fs.writeFile(fileName, data, (err) => {
+    err ? console.error(err) : console.log("README file created successfully!");
+  });
 }
 
 // TODO: Create a function to initialize app
