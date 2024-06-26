@@ -15,7 +15,38 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  const fileName = "READNE.md";
+
+  const data = `# ${title}
+    
+   ## Description
+   
+   ${description}
+    
+   ## Installation
+
+   ${installation}
+
+   ## Usage
+
+   ${usage}
+
+   ## How to Contribute
+
+   ${contributing}
+
+   ## License
+
+   ${license}
+
+   ## Questions
+
+   <a href="https://github.com/${github}">GitHub</a>
+
+   If you have further question, <a href="mailto:${email}">shoot me an email</a>
+    `;
+}
 
 // TODO: Create a function to initialize app
 function init() {}
