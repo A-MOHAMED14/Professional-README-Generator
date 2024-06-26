@@ -45,24 +45,19 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   switch (license) {
     case "MIT":
-      "This project is licensed under the MIT License. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and permission notice are included in all copies or substantial portions of the software. For more details, see the [LICENSE](LICENSE) file.";
-      break;
+      return "This project is licensed under the MIT License. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and permission notice are included in all copies or substantial portions of the software. For more details, see the [LICENSE](LICENSE) file.";
 
     case "GPLv3":
-      "This project is licensed under the GPLv3 License. You are free to use, copy, distribute, and modify the software, provided that any derivative work is also open-source and distributed under the same license. For more details, see the [LICENSE](LICENSE) file.";
-      break;
+      return "This project is licensed under the GPLv3 License. You are free to use, copy, distribute, and modify the software, provided that any derivative work is also open-source and distributed under the same license. For more details, see the [LICENSE](LICENSE) file.";
 
     case "Apache 2.0":
-      "This project is licensed under the Apache 2.0 License. You are free to use, copy, modify, and distribute the software, both in open-source and proprietary projects, provided that a copy of the license, a notice of any changes made, and an explicit grant of patent rights are included. For more details, see the [LICENSE](LICENSE) file.";
-      break;
+      return "This project is licensed under the Apache 2.0 License. You are free to use, copy, modify, and distribute the software, both in open-source and proprietary projects, provided that a copy of the license, a notice of any changes made, and an explicit grant of patent rights are included. For more details, see the [LICENSE](LICENSE) file.";
 
     case "BSD 3-Clause":
-      "This project is licensed under the BSD 3-Clause License. You are free to use, copy, modify, and distribute the software, provided that minimal attribution is given and the names of the contributors are not used to promote derived products. For more details, see the [LICENSE](LICENSE) file.";
-      break;
+      return "This project is licensed under the BSD 3-Clause License. You are free to use, copy, modify, and distribute the software, provided that minimal attribution is given and the names of the contributors are not used to promote derived products. For more details, see the [LICENSE](LICENSE) file.";
 
-    case "None":
-      "";
-      break;
+    default:
+      return "";
   }
 }
 
