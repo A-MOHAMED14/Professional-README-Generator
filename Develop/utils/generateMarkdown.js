@@ -3,16 +3,16 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
 
     case "GPLv3":
-      return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]`;
+      return `![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
 
     case "Apache 2.0":
-      return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
+      return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
 
     case "BSD 3-Clause":
-      return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`;
+      return `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`;
 
     default:
       return "";
@@ -97,7 +97,7 @@ ${description}
    
 To install the necessary dependencies, run the following command:
 
- \`\`\`sh
+\`\`\`sh
 ${installation}   
 \`\`\`
 
@@ -125,7 +125,10 @@ ${tests}
 
 ${renderLicenseSection(
   license
-)} For more details, see the <a href="https://github.com/${renderLicenseLink(license)}">${license}</a> file. 
+)} For more details, see the ${license} [LICENSE](${renderLicenseLink(
+    license
+  )}) file. 
+
    
 ## Questions
 
