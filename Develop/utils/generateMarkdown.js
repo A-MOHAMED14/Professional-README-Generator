@@ -96,30 +96,35 @@ function generateMarkdown(data) {
    ## Installation
    
    To install the necessary dependencies, run the following command:
-   ${installation}
+
+   \`\`\`sh
+   ${installation}   
+   \`\`\`
 
    ## Usage
 
    To use this application, run the following command:
-   node${usage}
 
-   ## How to Contribute
+   \`\`\`sh
+   ${usage}   
+   \`\`\`
+
+   ## Contributing
 
    ${contributing}
 
    ## License
-
-   This project is licensed under the <a href="${renderLicenseLink(
-     license
-   )}">${license}</a> License.
 
    ${renderLicenseSection(license)}
 
    ## Tests
 
    To run tests, use the following command:
-   ${tests}
 
+   \`\`\`sh
+   ${tests}   
+   \`\`\`
+   
    ## Questions
 
    If you have any questions about the project, please feel free to contact me directly:
