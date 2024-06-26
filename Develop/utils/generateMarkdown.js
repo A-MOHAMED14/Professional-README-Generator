@@ -24,27 +24,19 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch (license) {
     case "MIT":
-      `[![License: MIT](https://opensource.org/licenses/MIT)`;
-      break;
+      return `(https://opensource.org/licenses/MIT)`;
 
     case "GPLv3":
-      `[![License: GPL v3](https://www.gnu.org/licenses/gpl-3.0)`;
-      break;
+      return `(https://www.gnu.org/licenses/gpl-3.0)`;
 
     case "Apache 2.0":
-      `[![License](https:](https://opensource.org/licenses/Apache-2.0)`;
-      break;
+      return `(https://opensource.org/licenses/Apache-2.0)`;
 
     case "BSD 3-Clause":
-      `[![License](https:](https://opensource.org/licenses/BSD-3-Clause)`;
-      break;
-
-    case "None":
-      "";
-      break;
+      return `(https://opensource.org/licenses/BSD-3-Clause)`;
 
     default:
-      console.log("Ensure license link is correct");
+      return "";
   }
 }
 
