@@ -113,15 +113,6 @@ ${usage}
 
 ${contributing}
 
-## License
-
-${renderLicenseSection(
-  license
-)} For more details, see the <a href="https://github.com/${renderLicenseLink(
-    license
-  )}">${license}</a> file. 
-
-
 ## Tests
 
 To run tests, use the following command:
@@ -129,6 +120,12 @@ To run tests, use the following command:
 \`\`\`sh
 ${tests}   
 \`\`\`
+
+## License
+
+${renderLicenseSection(
+  license
+)} For more details, see the <a href="https://github.com/${renderLicenseLink(license)}">${license}</a> file. 
    
 ## Questions
 
