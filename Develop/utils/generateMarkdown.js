@@ -98,6 +98,8 @@ function generateMarkdown(data) {
 
   return `
   # ${title}
+
+  ${renderLicenseBadge(license)}
     
    ## Description
    
@@ -117,13 +119,16 @@ function generateMarkdown(data) {
 
    ## License
 
-   This project is licensed under the ${license} License 
+   This project is licensed under the <a href="${renderLicenseLink(license)}">${license}</a> License.
+
+   ${renderLicenseSection(license)}
+
 
    ## Questions
 
    <a href="https://github.com/${github}">GitHub</a>
 
-   If you have further questions, <a href="mailto:${email}">shoot me an email</a>
+   If you have further questions, 
 `;
 }
 
