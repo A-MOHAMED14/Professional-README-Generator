@@ -58,7 +58,29 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  switch (license) {
+    case "MIT":
+      "This project is licensed under the MIT License. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and permission notice are included in all copies or substantial portions of the software. For more details, see the [LICENSE](LICENSE) file.";
+      break;
+
+    case "GPLv3":
+      "This project is licensed under the GPLv3 License. You are free to use, copy, distribute, and modify the software, provided that any derivative work is also open-source and distributed under the same license. For more details, see the [LICENSE](LICENSE) file.";
+      break;
+
+    case "Apache 2.0":
+      "This project is licensed under the Apache 2.0 License. You are free to use, copy, modify, and distribute the software, both in open-source and proprietary projects, provided that a copy of the license, a notice of any changes made, and an explicit grant of patent rights are included. For more details, see the [LICENSE](LICENSE) file.";
+      break;
+
+    case "BSD 3-Clause":
+      "This project is licensed under the BSD 3-Clause License. You are free to use, copy, modify, and distribute the software, provided that minimal attribution is given and the names of the contributors are not used to promote derived products. For more details, see the [LICENSE](LICENSE) file.";
+      break;
+
+    case "None":
+      "";
+      break;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
