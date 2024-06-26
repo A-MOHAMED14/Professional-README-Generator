@@ -119,7 +119,9 @@ function generateMarkdown(data) {
 
    ## License
 
-   This project is licensed under the <a href="${renderLicenseLink(license)}">${license}</a> License.
+   This project is licensed under the <a href="${renderLicenseLink(
+     license
+   )}">${license}</a> License.
 
    ${renderLicenseSection(license)}
 
@@ -132,4 +134,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+export default generateMarkdown;
