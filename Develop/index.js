@@ -3,15 +3,52 @@ import fs from "fs";
 
 // TODO: Create an array of questions for user input
 const questions = [
-  "What is the title of your project?",
-  "Provide a description of your project:",
-  "Provide installation instructions:",
-  "Provide usage information:",
-  "Provide contribution guidelines:",
-  "Provide test instructions:",
-  "Choose a license for your project:",
-  "What is your GitHub username?",
-  "What is your email address?",
+  {
+    type: "input",
+    name: "title",
+    message: "What is the title of your project?",
+  },
+  {
+    type: "input",
+    name: "description",
+    message: "Provide a description of your project:",
+  },
+  {
+    type: "input",
+    name: "installation",
+    message: "Provide installation instructions:",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Provide usage information:",
+  },
+  {
+    type: "input",
+    name: "contributing",
+    message: "Provide contribution guidelines:",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Provide test instructions:",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Choose a license for your project:",
+    choices: ["MIT", "GPLv3", "Apache 2.0", "BSD 3-Clause", "None"],
+  },
+  {
+    type: "input",
+    name: "github",
+    message: "What is your GitHub username?",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "What is your email address?",
+  },
 ];
 
 // TODO: Create a function to write README file
