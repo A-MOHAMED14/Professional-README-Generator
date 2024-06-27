@@ -92,7 +92,7 @@ ${description}
     
 ## Installation
    
-To install the necessary dependencies, run the following command:
+
 
 \`\`\`sh
 ${installation}   
@@ -100,7 +100,7 @@ ${installation}
 
 ## Usage
 
-To use this application, run the following command:
+
 
 \`\`\`sh
 ${usage}   
@@ -112,7 +112,7 @@ ${contributing}
 
 ## Tests
 
-To run tests, use the following command:
+
 
 \`\`\`sh
 ${tests}   
