@@ -48,3 +48,11 @@ If you have any questions about the project, please feel free to contact me dire
 GitHub: <a href="https://github.com/A-MOHAMED14">A-MOHAMED14</a>
 
 Email: <a href="mailto:amin800@hotmail.co.uk">amin800@hotmail.co.uk</a>
+
+<br>
+
+## Video Demonstration
+
+Below is a video walk through demonstrating the functionality of this project:
+
+[![Watch the video](./assets/images/video-demo.png)](https://drive.google.com/file/d/1V5xWrT-8ZXBQKCTJ-zZFJl2DEJtuXi2n/view)
