@@ -14,6 +14,8 @@ This is a command-line application that generates a professional README.md file 
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Video Demonstration](#video-demonstration)
+
 
 ## Installation
 
